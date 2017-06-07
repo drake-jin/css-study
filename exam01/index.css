@@ -1,0 +1,60 @@
+/*
+절대 길이가 작업할 때 쉽다. 하지만 수정을 위해서는 매번 이 값을 변형해야 하는 단점이 있다.
+
+부모 글꼴 크기를 더 키우기로 했다면 매번 해당 스타일 시트로 돌아와서 글 꼴을 변경해주어야만 했다.
+
+px을 사용한 예제는 부모글꼴이 바뀌어도 자식은 여전히 같은 크기의 예제이며
+
+em을 사용한 예제는 부모 글꼴이 바뀌면 자식은 크기가 부모의 크기에 의존하여 바뀌게 된다.
+
+*/
+
+#btn-exam1 {
+    padding: 6px 16px;
+    border: 1px solid #446d88;
+    background: #58a linear-gradient(#77a0bb, #58a);
+    border-radius: 4px;
+    box-shadow: 0px 1px 5px gray;
+    color: white;
+    text-shadow: 0 -1px 1px #335166;
+    font-size: 20px;
+    line-height: 30px;
+}
+#btn-exam1:hover{
+    cursor: pointer;
+    background: #69b linear-gradient(#88b1cc, #69b);
+}
+
+
+#btn-exam2 {
+    padding: .3em .8em;
+    border: 1px solid #446d88;
+    background: #58a linear-gradient(#77a0bb, #58a);
+    border-radius: .2em;
+    box-shadow: 0 .05em .25em gray;
+    color: white;
+    text-shadow: 0 -.05em .05em #335166;
+    font-size: 125%;
+    line-height: 1.5;
+}
+
+#btn-exam2:hover{
+    cursor: pointer;
+    background: #69b linear-gradient(#88b1cc, #69b);
+}
+
+div{
+    height:100px;
+    width: 150px;
+}
+
+.before{background-color:#333;}
+.after{background-color: #000;}
+.after{
+    padding: .3em .8em;
+    border-radius: .2em;
+    box-shadow: 0 .05em .25em gray;
+    text-shadow: 0 -.05em .05em #335166;
+    font-size: 125%;
+    line-height: 1.5;
+}
