@@ -1,0 +1,171 @@
+body{
+  font-size:14px;
+}
+
+* {
+  padding:0px;
+  margin:0px;
+  border: none;
+  outline:none;
+}
+
+a {
+  color:inherit;
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+body{
+  margin:0px;
+  width:100%;
+  height:100%;
+  background: url('https://images.unsplash.com/photo-1475158574400-f135829cbda3?ixlib=rb-0.3.5&q=99&fm=jpg&crop=entropy&cs=tinysrgb&w=2048&fit=max&s=ba4fd274f22d411c83ce3510b476ba24') no-repeat;
+  background-position-x: 60%;
+  background-position-y: 60%;
+  position: relative;
+  color:white;
+}
+
+.panel-wrap{
+  top:0;bottom:0;right:0;left:0;
+  position: absolute;
+  margin: auto;
+  width: 50%;
+  max-width:40rem;
+  height: 50%;
+  min-height:40rem;
+  max-height:40rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 5px 5px 30px 1px rgba(0,0,0,0.7);
+  border-radius: 2px;
+}
+
+.panel-wrap .panel{
+  padding: 4rem 4rem 3rem;
+}
+
+.panel-wrap .panel .panel-header{
+  width:100%;
+}
+
+.panel-wrap .panel .panel-header .page-tab{
+  width:100%;
+}
+
+.panel-wrap .panel .panel-header .page-tab li{
+  display:inline-block;
+  width:6rem;6
+  padding: 0rem;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.panel-wrap .panel .panel-header .page-tab li a{
+  font-weight: bold;
+  display:block;
+  width:100%;
+}
+
+.panel-wrap .panel .panel-header .page-tab li.active{
+  border-bottom: 3px solid rgb(216, 114, 165);
+}
+.panel-wrap .panel .panel-header .page-tab li.active a{
+  color: rgb(216, 114, 165);
+}
+
+
+.panel-wrap .panel footer{
+  display:block;
+  text-align: center;
+}
+
+.panel-wrap .panel footer ul{
+  position: relative;
+  display: inline-block;
+}
+
+.panel-wrap .panel footer ul li{
+  display: inline-block;
+}
+
+
+
+.panel-wrap .panel .panel-page.active{
+  display: block;
+}
+.panel-wrap .panel .panel-page{
+  display: none;
+  padding-top: 5rem;
+}
+
+
+.form-control{
+  width: 100%;
+  margin: 15px 0px;
+}
+
+.panel-wrap .panel .panel-page .form-control {
+  margin-bottom:4rem;
+}
+
+.panel-wrap .panel .panel-page .form-control label{
+  display: block;
+  color:#ccc;
+}
+
+input[type=text],[type=password]{
+  color: #fff;
+  width: 100%;
+  font-size: 1.125rem;
+  line-height: 2.25rem;
+  padding: 0 15px;
+  background: rgba(0,0,0,0);
+  border-bottom: 2px solid #bbb;
+}
+[type=text]::-moz-placeholder,[type=password]::-moz-placeholder{
+  color: #bbb;
+}
+[type=text]::-webkit-input-placeholder,[type=password]::-webkit-input-placeholder{
+  color: #bbb;
+}
+
+button{
+  background-color:#fff;
+  font-size:1.25rem;
+  height:2.5rem;
+  width:100%;
+}
+
+.login-button{
+  color:#fff;
+  background-color:rgb(172, 13, 132);
+}
+
+@media(max-width: 768px){
+  .panel-wrap{
+    height:100%;
+    width: 100%;
+    max-height:100%;  
+    max-width: 100%;
+    display: relative;
+  }
+
+  .panel-wrap .panel{
+    padding:1rem;
+    height: 450px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  .panel-page{
+    padding-top: 1rem !important;
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "css-study",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/drake-jin/css-study",
+  "author": "drake-jin <dydwls121200@gmail.com>",
+  "license": "MIT"
+}
